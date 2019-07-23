@@ -17,11 +17,11 @@ class CreateQuestionTable extends Migration
             $table->bigIncrements('id');
             $table->integer('cource_level');
             $table->integer('question_grade');
-            $table->string('question','10');
-            $table->string('option_1','10');
-            $table->string('option_2','10');
-            $table->string('option_3','10');
-            $table->string('option_4','10');
+            $table->string('question','20');
+            $table->string('correct','10');
+            $table->string('uncorrect_1','10');
+            $table->string('uncorrect_2','10');
+            $table->string('uncorrect_3','10');
             $table->timestamps();
         });
     }

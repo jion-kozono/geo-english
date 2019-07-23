@@ -50,10 +50,7 @@ Route::get('hello/registers', function () {
 Route::get('hello/logins', function () {
     return view('hello.logins');
 });
-Route::get('test/inTest', function () {
-    return view('test.inTest');
-});
-
+Route::resource('test/inTest', 'TestController', ['only' => ['index']]);
 
 
 

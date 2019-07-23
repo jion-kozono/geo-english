@@ -3,7 +3,7 @@
 .test-frame {
     padding: 18px;
     display: inline-block;
-    height: 736px;
+    height: 720px;
     background-color: rgb(156, 156, 238);
     background-size: cover;
     width: 100%;
@@ -11,15 +11,23 @@
 .test-visual {
     padding: 46px;
     text-align: center;
-    height: 696px;
+    height: 680px;
     background-color: rgba(33, 33, 35, 0.16);
     background-size: cover;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.steps {
+    height: 40px;
+    font-size: 24px;
+    margin:0px;
+    text-align: center;
     width: 100%;
 }
 .questions {
     height: 80px;
     font-size: 48px;
-    margin:60px 0px;
+    margin:10px 0px 40px;
     text-align: center;
     width: 100%;
 }
@@ -29,7 +37,7 @@
     background-size: cover;
     height: 380px;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     width: 100%;
 }
@@ -48,7 +56,7 @@
 .questions {
     height: 48px;
     font-size: 30px;
-    margin:30px 0px 150px;
+    margin:10px 0px 70px;
     width: 100%;
 }
 .option-list {
@@ -73,22 +81,19 @@
 @section('main')
 <div class="test-frame">
     <div class="test-visual">
-        <div clss=""></div>
+        <div class="steps">第{{$questions->id}}問</div>
         <div class="questions">
-            QuestionQuestion
+            {{$questions->question}}
         </div>
         <p></p>
-        <div>
-        <ul class="option-list">
-            <li class="btn btn-light style-of-btn">コメント</li>
+        <form metod="POST" action="inTest">
+        <div class="option-list">
+        @foreach($options as $option)
+            <input class="btn btn-light style-of-btn" type="submit" value="{{$option}}">
             <p></p>
-            <li class="btn btn-light style-of-btn">コメント</li>
-            <p></p>
-            <li class="btn btn-light style-of-btn">コメント</li>
-            <p></p>
-            <li class="btn btn-light style-of-btn">コメント</li>
-        </ul>
+        @endforeach
         </div>
+        </form>
     </div>
 </div>
 @endsection
