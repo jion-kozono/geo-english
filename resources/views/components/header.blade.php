@@ -178,26 +178,7 @@ img {
         </div>
         <div class="fa fa-bars menu-icon"></div>
 </div>
-<!-- <div class="modal-top-contain">
-    <div class="modal-top">
-            <div class="fa fa-bars close-icon"><div>
-            <p></p>
-            <ul class="menu-lists">
-            <li><a href="" class="menu-list">ホーム<a></li>
-            <li><a href="" class="menu-list">会員登録<a></li>
-            <li><a href="" class="menu-list">会員ログイン<a></li>
-            <li><a href="" class="menu-list">製作者<a></li>
-            <li><a href="" class="menu-list">実力テスト<a></li>
-            <li><a href="" class="menu-list">TOEFL<a></li>
-            <li><a href="" class="menu-list">TOEIC<a></li>
-            <li><a href="" class="menu-list">英検<a></li>
-            <li><a href="" class="menu-list">参考書一覧<a></li>
-            <li><a href="" class="menu-list">利用規約<a></li>
-            <li><a href="" class="menu-list">プライバシーポリシー<a></li>
-            <li><a href="" class="menu-list">お問い合わせ<a></li>
-            </ul>
-    </div>
-</diV> -->
+
 <!-- ヘッダー -->
 <div class="header">
     <div>
